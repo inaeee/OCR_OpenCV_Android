@@ -29,10 +29,10 @@ input 이미지를 인식하고 출력한다.
 
 #### CameraView.java 기본 카메라 권한 요청 및 호출, 촬영
 1. android.permission.CAMERA 카메라 권한
-2. function hasPermissions 권한 확인, requestNecessaryPermissions 권한 요청, onRequestPermissionsResult 권한 결과값
-3. function mLoaderCallback 퍼미션 확인 후 카메라 활성화
-4. function onCreate 카메라 설정 및 뷰 선언, 상태바와 네비게이션 바 없애고 풀 스크린 상태 생성, 방향 센서 인식 및 전환 
-5. function onClickButton 촬영 버튼 클릭 시, 사진에 필요한 부분만 자르고 ROI 영역 안에 표시 / 재촬영 액션 시, 촬영 이미지 제거 후 모든 뷰가 초기 상태로 돌아온다.
+2. hasPermissions 권한 확인, requestNecessaryPermissions 권한 요청, onRequestPermissionsResult 권한 결과값
+3. mLoaderCallback 퍼미션 확인 후 카메라 활성화
+4. onCreate 카메라 설정 및 뷰 선언, 상태바와 네비게이션 바 없애고 풀 스크린 상태 생성, 방향 센서 인식 및 전환 
+5. onClickButton 촬영 버튼 클릭 시, 사진에 필요한 부분만 자르고 ROI 영역 안에 표시 / 재촬영 액션 시, 촬영 이미지 제거 후 모든 뷰가 초기 상태로 돌아온다.
 
 #### MainActivity.java
 1. Tesseract 모듈 초기화 및 CameraView 호출
